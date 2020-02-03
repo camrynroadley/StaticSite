@@ -1,0 +1,134 @@
+
+/*
+   ----------------------
+    HTML AND BODY STYLES
+   ----------------------
+*/
+
+html 
+{
+    
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+   ----------------
+    NAVIGATION BAR 
+   ----------------
+*/
+
+.topnav 
+{
+    overflow: hidden;
+    font-size: 10px;
+    margin-top: 1%;
+}
+
+.topnav a 
+{
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.topnav a:hover
+{
+    color: lightslategray;
+}
+
+.topnav .active
+{
+    color: lightslategray;
+}
+
+
+/*
+   ---------------
+    TEXT ELEMENTS
+   ---------------
+*/
+
+h1 
+{
+}
+
+
+/*
+    ------------------
+     PROJECT ELEMENTS
+    ------------------
+*/
+
+.projects h2 {
+    font-size: calc(16px + 0.5vw);
+}
+
+.projects h3 {
+    font-size: calc(12px + 0.5vw);
+    font-style: italic;
+}
+
+.projects a img {
+    width: 50%;
+    height: auto;
+    float: right;
+}
+
+/*
+    ---------------------
+     PROJECT #1 ELEMENTS
+    ---------------------
+*/
+
+.project1
+{
+    background-color: lightyellow;
+}
+
+
+/*
+    ---------------------
+     PROJECT #2 ELEMENTS
+    ---------------------
+*/
+.project2
+{
+    clear: both;
+}
+
+/* 
+   --------------------
+    SOCIAL MEDIA ICONS 
+   --------------------
+*/
+
+footer {
+    clear: both;
+    text-align: center;
+}
+
+.fa 
+{
+    padding: 20px;
+    font-size: 30px;
+    width: 12px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: black;
+    color: white;
+}
+
+.fa:hover 
+{
+    background-color: lightslategray;
+}

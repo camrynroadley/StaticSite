@@ -1,0 +1,85 @@
+﻿
+/*
+   ----------------------
+    HTML AND BODY STYLES
+   ----------------------
+*/
+
+html 
+{
+    background-color: white;
+}
+
+body
+{
+}
+
+/* 
+   ----------------
+    NAVIGATION BAR 
+   ----------------
+*/
+
+.topnav {
+    overflow: hidden;
+    font-size: 10px;
+    margin-top: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.topnav a 
+{
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.topnav a:hover 
+{
+    color: lightslategray;
+}
+
+.topnav .active {
+    color: lightslategray;
+}
+
+
+/*
+   ---------------
+    TEXT ELEMENTS
+   ---------------
+*/
+h1
+{
+
+}
+
+/* 
+   --------------------
+    SOCIAL MEDIA ICONS 
+   --------------------
+*/
+
+.fa 
+{
+    padding: 20px;
+    font-size: 30px;
+    width: 12px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: black;
+    color: white;
+}
+
+.fa:hover 
+{
+    background-color: lightslategray;
+}
