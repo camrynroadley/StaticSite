@@ -21,7 +21,6 @@ body {
 
 .topnav {
     overflow: hidden;
-    font-size: 10px;
     margin-top: 1%;
 }
 
@@ -32,9 +31,14 @@ body {
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 10px;
+        font-size: 12px;
         font-weight: bold;
     }
+
+        .topnav a:first-child {
+            font-size: 15px;
+            float: left;
+        }
 
         .topnav a:hover {
             color: lightslategray;
@@ -43,6 +47,68 @@ body {
     .topnav .active {
         color: lightslategray;
     }
+
+    .topnav a:focus {
+        color: #4b65ba;
+    }
+
+/*
+   ------------------
+    BLOG POST STYLES
+   ------------------
+*/
+.blogpost1 {
+    margin-top: 1%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    background-color: #fdf6e4;
+}
+    .blogpost1 h2 {
+        font-family: Roboto Mono;
+        font-size: calc(16px + 0.5vw);
+        text-align: center;
+    }
+
+    .blogpost1 h3 {
+        font-family: Roboto Mono;
+        font-size: calc(12px + 0.5vw);
+        font-style: italic;
+        text-align: center;
+    }
+
+    .blogpost1 iframe {
+        width: 560px;
+        height: 315px;
+    }
+
+.blogpost2 {
+    background-color: #f9e6f3;
+    margin-bottom: 1%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+.blogpost2 h2 {
+    font-family: Roboto Mono;
+    font-size: calc(16px + 0.5vw);
+    text-align: center;
+}
+
+.blogpost2 h3 {
+    font-family: Roboto Mono;
+    font-size: calc(12px + 0.5vw);
+    font-style: italic;
+    text-align: center;
+}
+
+.blogpost2 video {
+    width: 560px;
+    height: 315px;
+}
+
+#video{
+    text-align: center;
+}
 
 
 /* 
@@ -54,6 +120,7 @@ body {
 footer {
     clear: both;
     text-align: center;
+    margin-bottom: 2%;
 }
 
 .fa {
@@ -69,4 +136,8 @@ footer {
 
     .fa:hover {
         background-color: lightslategray;
+    }
+
+    .fa:focus {
+        background-color: #4b65ba;
     }

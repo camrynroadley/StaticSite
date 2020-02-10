@@ -12,6 +12,55 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*
+   ------------------
+    BACKGROUND IMAGE
+   ------------------
+*/
+
+.hero-image {
+    background: url(background.jpg) center center / cover no-repeat fixed, rgb(134,176,232);
+    height: 800px;
+    margin-top: 0.5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    width: 99.225vw;
+    position: relative;
+    margin-left: -49.59vw;
+    left: 50%;
+}
+
+
+.hero-text {
+    font-family: Roboto Mono;
+    text-align: left;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 55%;
+    background-color: black;
+    width: 30%;
+    height: auto;
+    padding-bottom: 1%;
+}
+
+    .hero-text h1 {
+        font-family: Roboto Mono;
+        font-size: calc(40px + 0.5vw);
+        color: white;
+        padding-left: 5%;
+        padding-right: 3%;
+    }
+
+    .hero-text p {
+        padding-top: 2%;
+        padding-left: 5%;
+        padding-right: 3%;
+        font-size: calc(16px + 0.5vw);
+        color: white;
+    }
 
 /* 
    ----------------
@@ -21,27 +70,35 @@ body {
 
 .topnav {
     overflow: hidden;
-    font-size: 10px;
     margin-top: 1%;
 }
 
-    .topnav a {
-        float: right;
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 10px;
-        font-weight: bold;
+.topnav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+    .topnav a:first-child {
+        font-size: 15px;
+        float: left;
     }
 
-        .topnav a:hover {
-            color: lightslategray;
-        }
+.topnav a:hover {
+    color: lightslategray;
+}
 
-    .topnav .active {
-        color: lightslategray;
+.topnav .active {
+    color: lightslategray;
+}
+
+    .topnav a:focus {
+        color: #4b65ba;
     }
 
 
@@ -54,6 +111,7 @@ body {
 footer {
     clear: both;
     text-align: center;
+    margin-bottom: 2%;
 }
 
 .fa {
@@ -67,6 +125,10 @@ footer {
     color: white;
 }
 
-    .fa:hover {
-        background-color: lightslategray;
-    }
+.fa:hover {
+    background-color: lightslategray;
+}
+
+.fa:focus {
+    background-color: #4b65ba;
+}
