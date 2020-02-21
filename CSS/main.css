@@ -4,11 +4,14 @@
    ----------------------
 */
 
-html {
+html 
+{
 }
 
 
-body {
+body
+{
+    font-size: calc(5px + 0.5vw);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -18,7 +21,8 @@ body {
    ------------------
 */
 
-.hero-image {
+.hero-image 
+{
     background: url(background.jpg) center center / cover no-repeat fixed, rgb(134,176,232);
     height: 800px;
     margin-top: 0.5%;
@@ -34,7 +38,8 @@ body {
 }
 
 
-.hero-text {
+.hero-text 
+{
     font-family: Roboto Mono;
     text-align: left;
     position: absolute;
@@ -46,21 +51,23 @@ body {
     padding-bottom: 1%;
 }
 
-    .hero-text h1 {
-        font-family: Roboto Mono;
-        font-size: calc(40px + 0.5vw);
-        color: white;
-        padding-left: 5%;
-        padding-right: 3%;
-    }
+.hero-text h1 
+{
+    font-family: Roboto Mono;
+    font-size: calc(40px + 0.5vw);
+    color: white;
+    padding-left: 5%;
+    padding-right: 3%;
+}
 
-    .hero-text p {
-        padding-top: 2%;
-        padding-left: 5%;
-        padding-right: 3%;
-        font-size: calc(16px + 0.5vw);
-        color: white;
-    }
+.hero-text p 
+{
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 3%;
+    font-size: calc(16px + 0.5vw);
+    color: white;
+}
 
 /* 
    ----------------
@@ -68,39 +75,94 @@ body {
    ----------------
 */
 
-.topnav {
-    overflow: hidden;
-    margin-top: 1%;
-}
-
-.topnav a {
+.main-nav 
+{
     float: right;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 12px;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.main-nav > li
+{
+    float: left;
+}
+
+.main-nav a 
+{
+    color: #000000;
     font-weight: bold;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
 }
 
-    .topnav a:first-child {
-        font-size: 15px;
-        float: left;
-    }
-
-.topnav a:hover {
-    color: lightslategray;
+.main-nav a:hover,
+.main-nav .active 
+{
+    color: #a3abd9;
+    font-weight: bold;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
 }
 
-.topnav .active {
-    color: lightslategray;
+.main-nav a:focus
+{
+    color: #6db6a1;
+    font-weight: bold;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
 }
 
-    .topnav a:focus {
-        color: #4b65ba;
-    }
+ul 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+.main-header 
+{
+    margin: auto;
+    width: 90%;
+    min-height: 90px;
+    padding: 1em 2em;
+    border-radius: 0 0 5px 5px;
+}
+
+.main-header:after 
+{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.dropdown 
+{
+    position: relative;
+}
+
+.dropdown:after 
+{
+    content: "\25BC";
+    font-size: .5em;
+    display: block;
+    position: absolute;
+    top: 38%;
+    right: 12%;
+}
+
+.drop-nav
+{
+    position: absolute;
+    display: none;
+}
+
+.dropdown:hover > .drop-nav 
+{
+    display: block;
+}
 
 /* 
    --------------------
@@ -108,13 +170,15 @@ body {
    --------------------
 */
 
-footer {
+footer 
+{
     clear: both;
     text-align: center;
     margin-bottom: 2%;
 }
 
-.fa {
+.fa 
+{
     padding: 20px;
     font-size: 30px;
     width: 12px;
@@ -125,10 +189,12 @@ footer {
     color: white;
 }
 
-.fa:hover {
+.fa:hover
+{
     background-color: lightslategray;
 }
 
-.fa:focus {
+.fa:focus 
+{
     background-color: #4b65ba;
 }

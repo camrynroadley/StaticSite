@@ -1,15 +1,17 @@
-﻿
+
 /*
    ----------------------
     HTML AND BODY STYLES
    ----------------------
 */
 
-html {
-    background-color: white;
+html 
+{
 }
 
-body {
+
+body 
+{
     font-size: calc(5px + 0.5vw);
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -42,7 +44,7 @@ body {
 }
 
 .main-nav a:hover,
-.main-nav .active 
+.main-nav .active
 {
     color: #a3abd9;
     font-weight: bold;
@@ -83,7 +85,7 @@ ul
     clear: both;
 }
 
-.dropdown 
+.dropdown
 {
     position: relative;
 }
@@ -98,84 +100,13 @@ ul
     right: 12%;
 }
 
-.drop-nav 
+.drop-nav
 {
     position: absolute;
     display: none;
 }
 
-.dropdown:hover > .drop-nav 
+.dropdown:hover > .drop-nav
 {
     display: block;
 }
-
-/*
-   ---------------
-    ABOUT SECTION
-   ---------------
-*/
-
-
-.aboutMe {
-    text-align: center;
-    background-color: #e8f0f8;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-}
-
-    .aboutMe h2 {
-        font-family: Roboto Mono;
-        font-size: calc(16px + 0.5vw);
-        text-align: center;
-    }
-
-    .aboutMe p {
-        font-family: Roboto Mono;
-        font-size: calc(12px + 0.5vw);
-        width: 50%;
-        padding-left: 25%;
-    }
-
-#aboutPic {
-    text-align: center;
-}
-
-    #aboutPic img {
-        width: 20%;
-        height: auto;
-    }
-
-
-/* 
-   --------------------
-    SOCIAL MEDIA ICONS 
-   --------------------
-*/
-footer {
-    clear: both;
-    text-align: center;
-    margin-bottom: 2%;
-}
-
-
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 12px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    background: black;
-    color: white;
-}
-
-    .fa:hover {
-        background-color: lightslategray;
-    }
-
-
-    .fa:focus {
-        background-color: #4b65ba;
-    }
