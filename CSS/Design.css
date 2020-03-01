@@ -110,3 +110,74 @@ ul
 {
     display: block;
 }
+
+/*
+   ----------------
+    TABLE ELEMENTS
+   ----------------
+*/
+
+.design-projects
+{
+    margin-top: 2%;
+}
+
+table 
+{
+    font-size: 20px;
+    font-family: Roboto Mono;
+    text-align: center;
+}
+
+table, th, td 
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td
+{
+    padding: 40px;
+}
+
+th
+{
+    background-color: #a3abd9;
+}
+
+tr:nth-child(even) 
+{
+    background-color: #f2f2f2;
+}
+
+
+/* 
+   --------------------
+    SOCIAL MEDIA ICONS 
+   --------------------
+*/
+
+footer {
+    clear: both;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 12px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: black;
+    color: white;
+}
+
+    .fa:hover {
+        background-color: lightslategray;
+    }
+
+    .fa:focus {
+        background-color: #4b65ba;
+    }

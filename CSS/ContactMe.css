@@ -1,0 +1,389 @@
+﻿
+/*
+   ----------------------
+    HTML AND BODY STYLES
+   ----------------------
+*/
+
+html 
+{
+}
+
+
+body {
+    font-size: calc(5px + 0.5vw);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 
+   ----------------
+    NAVIGATION BAR 
+   ----------------
+*/
+
+.main-nav 
+{
+    float: right;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.main-nav > li 
+{
+    float: left;
+}
+
+.main-nav a 
+{
+    color: #000000;
+    font-weight: bold;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav .active 
+{
+    color: #a3abd9;
+    font-weight: bold;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.main-nav a:focus 
+{
+    color: #6db6a1;
+    font-weight: bold;
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+ul 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-header 
+{
+    margin: auto;
+    width: 90%;
+    min-height: 90px;
+    padding: 1em 2em;
+    border-radius: 0 0 5px 5px;
+}
+
+.main-header:after 
+{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.dropdown 
+{
+    position: relative;
+}
+
+.dropdown:after 
+{
+    content: "\25BC";
+    font-size: .5em;
+    display: block;
+    position: absolute;
+    top: 38%;
+    right: 12%;
+}
+
+.drop-nav 
+{
+    position: absolute;
+    display: none;
+}
+
+.dropdown:hover > .drop-nav 
+{
+    display: block;
+}
+
+
+/*
+   -------------
+    FORM STYLES
+   -------------
+*/
+
+
+    .contact-me-form h1 {
+        font-size: 20px;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+.contact-me-form {
+    background-color: #F6F7F8;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 80%;
+    padding: 50px;
+    margin: 0 0 40px 0;
+}
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+    .form-row input[type='text'],
+    .form-row input[type='email'] {
+        background-color: #FFFFFF;
+        border: 1px solid #D6D9DC;
+        border-radius: 3px;
+        width: 100%;
+        padding: 7px;
+        font-size: 14px;
+    }
+
+        .form-row input[type='text']:invalid,
+        .form-row input[type='email']:invalid {
+            border: 1px solid #D55C5F;
+            color: #D55C5F;
+            box-shadow: none; /* Remove default red glow in Firefox */
+        }
+
+    .form-row label {
+        margin-bottom: 15px;
+    }
+
+/*
+   ---------------------
+    RADIO BUTTON STYLES
+   ---------------------
+*/
+
+.legacy-form-row {
+    border: none;
+    margin-bottom: 40px;
+}
+
+    .legacy-form-row legend {
+        margin-bottom: 15px;
+    }
+
+    .legacy-form-row .radio-label {
+        display: block;
+        font-size: 14px;
+        padding: 0 20px 0 10px;
+    }
+
+    .legacy-form-row input[type='radio'] {
+        margin-top: 2px;
+    }
+
+    .legacy-form-row .radio-label,
+    .legacy-form-row input[type='radio'] {
+        float: left;
+    }
+
+/*
+   ----------------------
+    DROPDOWN MENU STYLES
+   ----------------------
+*/
+
+.form-row select {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px; /* This won't work in Chrome or Safari */
+    -webkit-appearance: none; /* This will make it work */
+}
+
+/*
+   -----------------
+    TEXTAREA STYLES
+   -----------------
+*/
+
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+}
+
+.form-row .instructions {
+    color: #999999;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/*
+   -----------------
+    CHECKBOX STYLES
+   -----------------
+*/
+.form-row .checkbox-label {
+    margin-bottom: 0;
+}
+
+/*
+   ---------------
+    BUTTON STYLES
+   ---------------
+*/
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #4a003c;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+    .form-row button:hover {
+        background-color: #200057;
+    }
+
+    .form-row button:active {
+        background-color: #0a0058;
+    }
+
+/*
+   ----------------
+    DESKTOP STYLES
+   ----------------
+*/
+
+@media only screen and (min-width: 700px) {
+    /*
+       -------------
+        FORM STYLES
+       -------------
+    */
+
+    .contact-me-form-header,
+    .contact-me-form {
+        width: 600px;
+    }
+
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start; /* To avoid stretching */
+        margin-bottom: 20px;
+    }
+
+        .form-row input[type='text'],
+        .form-row input[type='email'],
+        .form-row select,
+        .form-row textarea {
+            width: 250px;
+            height: initial;
+        }
+
+        .form-row label {
+            text-align: right;
+            width: 120px;
+            margin-top: 7px;
+            padding-right: 20px;
+        }
+
+    /*
+       ---------------------
+        RADIO BUTTON STYLES
+       ---------------------
+    */
+
+    .legacy-form-row {
+        margin-bottom: 10px;
+    }
+
+        .legacy-form-row legend {
+            width: 120px;
+            text-align: right;
+            padding-right: 20px;
+        }
+
+        .legacy-form-row legend {
+            float: left;
+        }
+
+    /*
+       -----------------
+        TEXTAREA STYLES
+       -----------------
+    */
+
+    .form-row .instructions {
+        margin-left: 120px;
+    }
+
+    /*
+       -----------------
+        CHECKBOX STYLES
+       -----------------
+    */
+    .form-row .checkbox-label {
+        margin-left: 120px;
+        width: auto;
+    }
+
+    /*
+       ---------------
+        BUTTON STYLES
+       ---------------
+    */
+
+    .form-row button {
+        margin-left: 120px;
+    }
+}
+
+
+/* 
+   --------------------
+    SOCIAL MEDIA ICONS 
+   --------------------
+*/
+
+footer {
+    clear: both;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 12px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: black;
+    color: white;
+}
+
+    .fa:hover {
+        background-color: lightslategray;
+    }
+
+    .fa:focus {
+        background-color: #4b65ba;
+    }
+

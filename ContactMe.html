@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>CONTACT ME</title>
+    <meta name="description" content="Camryn Roadley Contact Me" />
+    <link rel="stylesheet" href="CSS/ContactMe.css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="Assets/favicon-32x32.png" />
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <a href="index.html"><img src="ProjectImages/header2.JPG" /></a>
+        <ul class="main-nav">
+            <li class="dropdown">
+                <a>PROJECTS</a>
+                <ul class="drop-nav">
+                    <li><a href="Design.html">DESIGN</a></li>
+                    <li><a href="Projects.html">DEVELOPMENT</a></li>
+                </ul>
+            </li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="ContactMe.html" class="active">CONTACT ME</a></li>
+        </ul>
+    </header>
+
+
+    <form action='' method='post' class='contact-me-form'>
+        <h1>CONTACT ME</h1>
+        <div class='form-row'>
+            <label for='full-name'>Your Name</label>
+            <input id='full-name' name='full-name' type='text' />
+        </div>
+
+        <div class='form-row'>
+            <label for='email'>Email</label>
+            <input id='email'
+                   name='email'
+                   type='email'
+                   placeholder='name@example.com' />
+        </div>
+
+        <fieldset class='legacy-form-row'>
+            <legend>What would you like done?</legend>
+            <input id='job-1'
+                   name='job'
+                   type='radio'
+                   value='design' />
+            <label for='job-1' class='radio-label'>Design</label>
+            <input id='jobs-2'
+                   name='job'
+                   type='radio'
+                   value='development'
+                   checked />
+            <label for='job-2' class='radio-label'>Development</label>
+        </fieldset>
+
+        <div class='form-row'>
+            <label for='purpose'>Project Purpose</label>
+            <select id='purpose' name='purpose'>
+                <option value='b'>Business</option>
+                <option value='p'>Personal</option>
+            </select>
+        </div>
+
+        <div class='form-row'>
+            <label for='abstract'>Abstract</label>
+            <textarea id='abstract' name='abstract'></textarea>
+            <div class='instructions'>Describe your project in 500 words or less</div>
+        </div>
+
+        <div class='form-row'>
+            <label class='checkbox-label' for='available'>
+                <input id='available'
+                       name='available'
+                       type='checkbox'
+                       value='is-available' />
+                <span>I am available to meet in person.</span>
+            </label>
+        </div>
+
+        <div class='form-row'>
+            <button>Submit</button>
+        </div>
+
+    </form>
+
+    <footer>
+        <br />
+        <a href="https://www.linkedin.com/in/camrynroadley/" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://github.com/camrynroadley" target="_blank" class="fa fa-github"></a>
+        <a href="https://www.facebook.com/camrynroadley" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/camrynroadley" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/camrynroadley/?hl=en" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://open.spotify.com/user/22wc26cw2tpljbok7pgqseahi" target="_blank" class="fa fa-spotify"></a>
+    </footer>
+
+</body>
+</html>
