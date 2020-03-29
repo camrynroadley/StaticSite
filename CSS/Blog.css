@@ -28,10 +28,11 @@ body
     margin-top: 8px;
 }
 
-.main-nav > li
-{
-   float: left;
-}
+    .main-nav > li {
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
 
 .main-nav a 
 {
@@ -116,87 +117,83 @@ ul
    ------------------
 */
 
-.blogpost1 {
-    margin-top: 2%;
-    padding-top: 1%;
-    padding-bottom: 3%;
-    background-color: #fdf6e4;
-}
-    .blogpost1 h2 {
-        font-family: Roboto Mono;
-        font-size: calc(16px + 0.5vw);
-        text-align: center;
-    }
-
-    .blogpost1 h3 {
-        font-family: Roboto Mono;
-        font-size: calc(12px + 0.5vw);
-        font-style: italic;
-        text-align: center;
-    }
-
-    .blogpost1 iframe {
-        width: 560px;
-        height: 315px;
-    }
-
-.blogpost2 {
-    background-color: #f9e6f3;
-    margin-bottom: 1%;
-    padding-top: 1%;
-    padding-bottom: 3%;
-}
-
-.blogpost2 h2 {
+.my-4{
     font-family: Roboto Mono;
-    font-size: calc(16px + 0.5vw);
-    text-align: center;
+    font-weight: bold;
+}
+.card-title{
+    font-family: Roboto Mono;
+    font-weight: bold;
+    
 }
 
-.blogpost2 h3 {
+.card-title > a, .card-title > a:hover {
+     color: black;
+}
+
+.card-date{
     font-family: Roboto Mono;
-    font-size: calc(12px + 0.5vw);
+    font-weight: bold;
     font-style: italic;
-    text-align: center;
 }
 
-.blogpost2 video {
-    width: 560px;
-    height: 315px;
+.card-text{
+    font-family: Roboto Mono;
 }
 
-#video{
-    text-align: center;
+/*
+   ------------
+    PAGINATION
+   ------------
+*/
+.page-link{
+    font-family: Roboto Mono;
+    color: black !important;
 }
-
-
 /* 
    --------------------
     SOCIAL MEDIA ICONS 
    --------------------
 */
-
-footer {
-    clear: both;
-    text-align: center;
-    margin-bottom: 2%;
-}
-
 .fa {
-    padding: 20px;
-    font-size: 30px;
+    padding: 30px;
+    font-size: 50px;
     width: 12px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-    background: black;
     color: white;
 }
 
     .fa:hover {
-        background-color: lightslategray;
+        color: black;
+        text-decoration: none;
     }
 
     .fa:focus {
-        background-color: #4b65ba;
+        color: black;
+        text-decoration: none;
     }
+
+
+/* 
+   -----------------------
+    STICKY FOOTER CLASSES 
+   -----------------------
+*/
+footer {
+    background: #007bff;
+    background: linear-gradient(to right, #a3abd9, #4b65ba);
+    height: 100%;
+    text-align: center;
+    font-family: Roboto Mono;
+}
+
+#page-content {
+    flex: 1 0 auto;
+}
+
+#sticky-footer {
+    flex-shrink: 0;
+}
+
