@@ -177,6 +177,7 @@ footer {
     background: linear-gradient(to right, #a3abd9, #4b65ba);
     height: 100%;
     text-align: center;
+    font-family: Roboto Mono;
 }
 
 #page-content {

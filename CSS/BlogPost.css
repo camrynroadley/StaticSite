@@ -1,0 +1,203 @@
+/*
+   ----------------------
+    HTML AND BODY STYLES
+   ----------------------
+*/
+
+html {
+}
+
+
+body {
+    font-size: calc(5px + 0.5vw);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+   ----------------
+    NAVIGATION BAR 
+   ----------------
+*/
+
+.main-nav {
+    float: right;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+    .main-nav > li {
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+
+    .main-nav a {
+        color: #000000;
+        font-weight: bold;
+        display: block;
+        padding: 10px 30px;
+        text-decoration: none;
+    }
+
+        .main-nav a:hover,
+        .main-nav .active {
+            color: #a3abd9;
+            font-weight: bold;
+            display: block;
+            padding: 10px 30px;
+            text-decoration: none;
+        }
+
+        .main-nav a:focus {
+            color: #6db6a1;
+            font-weight: bold;
+            display: block;
+            padding: 10px 30px;
+            text-decoration: none;
+        }
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-header {
+    margin: auto;
+    width: 90%;
+    min-height: 90px;
+    padding: 1em 2em;
+    border-radius: 0 0 5px 5px;
+}
+
+    .main-header:after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+
+.dropdown {
+    position: relative;
+}
+
+    .dropdown:after {
+        content: "\25BC";
+        font-size: .5em;
+        display: block;
+        position: absolute;
+        top: 38%;
+        right: 12%;
+    }
+
+.drop-nav {
+    position: absolute;
+    display: none;
+}
+
+.dropdown:hover > .drop-nav {
+    display: block;
+}
+
+
+/* 
+   ----------------
+    SECTION STYLES
+   ----------------
+*/
+
+.container > form > input {
+    font-family: Roboto Mono;
+    font-size: calc(8px + 0.5vw);
+}
+
+.container h1 {
+    font-family: Roboto Mono;
+    font-size: calc(15px + 0.5vw);
+    font-weight: bold;
+}
+
+.container h2 {
+    font-family: Roboto Mono;
+    font-size: calc(10px + 0.5vw);
+    font-style: italic;
+}
+
+.container h3 {
+    font-family: Roboto Mono;
+    font-size: calc(10px + 0.5vw);
+    font-weight: bold;
+}
+
+.container h4 {
+    font-family: Roboto Mono;
+    font-size: calc(6px + 0.5vw);
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.grid > div > ul > li > img {
+    width: 80%;
+    height: auto;
+}
+
+.grid > div > ul > li > a > img {
+    width: 20%;
+    height: auto;
+}
+
+.grid > div > p {
+    font-family: Roboto Mono;
+    font-size: calc(10px + 0.5vw);
+}
+
+.grid > div > p > img {
+    width: 80%;
+    height: auto;
+}
+/* 
+   --------------------
+    SOCIAL MEDIA ICONS 
+   --------------------
+*/
+.fa {
+    padding: 30px;
+    font-size: 50px;
+    width: 12px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+}
+
+    .fa:hover {
+        color: black;
+        text-decoration: none;
+    }
+
+    .fa:focus {
+        color: black;
+        text-decoration: none;
+    }
+
+
+/* 
+   -----------------------
+    STICKY FOOTER CLASSES 
+   -----------------------
+*/
+footer {
+    background: #007bff;
+    background: linear-gradient(to right, #a3abd9, #4b65ba);
+    height: 100%;
+    text-align: center;
+    font-family: Roboto Mono;
+}
+
+#page-content {
+    flex: 1 0 auto;
+}
+
+#sticky-footer {
+    flex-shrink: 0;
+}

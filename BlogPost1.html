@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="CSS/BlogPost.css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="Assets/favicon-32x32.png" />
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- JavaScript HTML requirements -->
+    <script src="JS/slide_show_library.js"></script>
+    <script type="text/javascript" src="JS/slide_show.js"></script>
+
+</head>
+<body>
+    <header class="main-header">
+        <a href="index.html"><img src="ProjectImages/header2.JPG" /></a>
+        <ul class="main-nav">
+            <li><a href="Projects.html">PROJECTS</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Blog.html" class="active">BLOG</a></li>
+        </ul>
+    </header>
+
+        <!-- Grid Container -->
+    <div class="container">
+
+        <form action="Blog.html">
+            <input type="submit" value="Back" />
+        </form>
+
+        <br /><br />
+
+        <h1>Blog Post #1</h1>
+        <h2>April 4th, 2020</h2>
+
+
+        <div class="grid">
+            <div>
+                <ul id="image_list">
+                    <li><a href="ProjectImages/golf1.JPG" title="Golf - Arizona"></a></li>
+                    <li><a href="ProjectImages/golf2.jpeg" title="Golf - Seattle"></a></li>
+                    <li><a href="ProjectImages/golf3.jpeg" title="Golf - Idaho"></a></li>
+                </ul>
+
+                <p id="controls">
+                    <button id="btn_previous" disabled="disabled">
+                        <img src="ProjectImages/prev.gif" alt="Previous Image">
+                    </button>
+                    <button id="btn_play">
+                        <img src="ProjectImages/pause.gif" alt="Play or Pause" id="img_play_pause">
+                    </button>
+                    <input type="button" id="btn_speed" value="Slow">
+                    <button id="btn_next" disabled="disabled">
+                        <img src="ProjectImages/next.gif" alt="Next Image">
+                    </button>
+                </p>
+
+                <h3><span id="caption">Golf - Arizona</span></h3>
+                <p><img src="images/js.jpg" alt="" id="image"></p>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <br />
+        <a href="https://www.linkedin.com/in/camrynroadley/" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://github.com/camrynroadley" target="_blank" class="fa fa-github"></a>
+        <a href="https://www.facebook.com/camrynroadley" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/camrynroadley" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/camrynroadley/?hl=en" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://open.spotify.com/user/22wc26cw2tpljbok7pgqseahi" target="_blank" class="fa fa-spotify"></a>
+
+
+        <div class="container text-center">
+            <medium>Copyright &copy; Camryn Roadley</medium>
+        </div>
+    </footer>
+
+</body>
+</html>
